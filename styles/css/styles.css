@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif; }
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  background: #ecc33a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../../media/wallpaper.jpg) no-repeat center;
+  background-size: cover; }
+  @media all and (max-width: 700px) {
+    .hero {
+      background: url(../../media/wallpaper.jpg) no-repeat 70%;
+      background-size: cover; } }
+  .hero .center-content {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: flex-start; }
+    .hero .center-content .left-content {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start; }
+      @media all and (max-width: 700px) {
+        .hero .center-content .left-content {
+          width: 100%;
+          align-items: center; } }
+      .hero .center-content .left-content .text-welcome {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 3em;
+        background: #1A1B41;
+        color: white;
+        padding: 0.3em; }
+        @media all and (max-width: 700px) {
+          .hero .center-content .left-content .text-welcome {
+            font-size: 2em; } }
+      .hero .center-content .left-content .text-bible {
+        background: #F1FFE7;
+        padding: 0.8em;
+        max-width: 400px; }
+        @media all and (max-width: 700px) {
+          .hero .center-content .left-content .text-bible {
+            font-size: 0.5em; } }
